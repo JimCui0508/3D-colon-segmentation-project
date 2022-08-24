@@ -2,7 +2,7 @@
 
 *GMine Cooperation** - *"3D Convolutional Neural Network for colon Segmentation"*
 
-Gmine's gut segmentation project, which may be used for tumor prediction.
+Gmine's intestinal segmentation project, which may be used for tumor prediction.
 
 The dataset used is obtained from Academician Wang of Friendship Hospital.
 
@@ -30,23 +30,23 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 ## Model Results
 ### 3D U-Net Architecture loss:
 
-![](unetloss.png)
+![](.unetloss.png)
 
 
 #### We achieved a dice score of 0.90 with this architecture.
 #### This is our second best model.
 
 ### Results
-![](unetdice.PNG)
+![](.unetdice.PNG)
 
 ### 3D V-Net Architecture loss:
 
-![](vnetloss.png)
+![](.vnetloss.png)
 
 #### We achieved a dice score of 0.89 with this, but with high resolution and reconstruction performance on z axis .
 
 ### Results 
-![](vnetdice.PNG)
+![](.vnetdice.PNG)
 
 # What I Learned & detailed presentation
 * Presentation [PPT](3DU-net segmentation(1).pptx)
