@@ -1,4 +1,4 @@
-# 3DUNet and VNet - Keras
+# 3DUNet and VNet-like architecture - Keras
 
 *GMine Cooperation** - *"3D Convolutional Neural Network for colon Segmentation"*
 
@@ -37,7 +37,7 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 #### This is our second best model.
 
 ### Results
-![unet](./unetdice.PNG)
+![unet](./unetdice.png)
 
 ### 3D V-Net Architecture loss:
 
@@ -46,9 +46,13 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 #### We achieved a dice score of 0.89 with this, but with high resolution and reconstruction performance on z axis .
 
 ### Results 
-![vnet](./vnetdice.PNG)
+![vnet](./vnetdice.png)
 
 # What I Learned & detailed presentation
 * Presentation PPT : 3DU-net segmentation(1).pptx
 * Automatic pre-processing algorithm Medical Images in the NIfTI format with simpleitk, scikit-image.
 * Successfully adapted [VNet](https://arxiv.org/abs/1606.04797 "V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation") (3D CNN Architecture) to Tensorflow/Keras.
+
+# Models that are under development
+* 3D Shifted WINdow Transformer UNet(Using transformer block as bottleneck)
+* Dual attention Vnet(from junqiangchen)[original idea](https://github.com/junqiangchen/VNetFamily)
