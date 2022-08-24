@@ -31,6 +31,7 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 ### 3D U-Net Architecture loss:
 
 ![](/unetloss.png)
+![senet](./assests/multiResmodule.png)
 
 
 #### We achieved a dice score of 0.90 with this architecture.
