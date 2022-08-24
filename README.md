@@ -30,7 +30,7 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 ## Model Results
 ### 3D U-Net Architecture loss:
 
-![](./unetloss.png)
+![unet](./unetloss.png)
 ![senet](./assests/multiResmodule.png)
 
 
