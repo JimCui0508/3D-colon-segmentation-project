@@ -11,7 +11,7 @@ About 1000 intestinal CT data are used in the project.
 
 Computational conformal geometry algorithm is used to annotate the data, and then supervised model training is used to solve the problem of image annotation difficulty in medical image processing, and its effect is proved to be better than the traditional geometric segmentation method.
 
-This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
+This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment.
 
 ## Requirements
 * Tensorflow-gpu == 1.14.0
@@ -25,7 +25,17 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 * cudnn == 7.6.5
 * cupy-cuda101 == 9.6.0(if gpu pre-processing possible)
 
-
+## Scripts
+### data preprocessing
+*  DataUnzipping.py -- unzipping raw data
+*  DataResampling.py -- dataresampling to size of 128,128,128(or any other size to fit the model)
+### U-Net model
+*  3DUNet.py  -- model training
+*  ModelPrediction.py -- generating reconstruction result for visualization
+### V-Net model (./VNet-master)
+*  3DVNet.py  -- model training
+*  Vnet_3d.py -- V-Net model
+*  ModelPrediction.py -- generating reconstruction result for visualization
 
 ## Model Results
 ### 3D U-Net Architecture loss:
@@ -43,7 +53,7 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment
 
 ![vnet](./vnetloss.png)
 
-#### We achieved a dice score of 0.89 with this, but with high resolution and reconstruction performance on z axis .
+#### We achieved a dice score of 0.89 with this, but with high resolution and reconstruction performance on z axis.
 
 ### Results 
 ![vnet](./vnetdice.png)
