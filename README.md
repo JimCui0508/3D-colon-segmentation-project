@@ -1,12 +1,11 @@
-# 3DUNet and VNet-like architecture - Keras
+# 3DUNet-like and VNet-like architecture - Keras
 
 *GMine Cooperation** - *"3D Convolutional Neural Network for colon Segmentation"*
 
 Gmine's intestinal segmentation project, which may be used for tumor prediction.
 
-The dataset used is obtained from Academician Wang of Friendship Hospital.
 
-At present, the project has completed the development and debugging of 3DUNet and 3DVNet model, and the model performance is shown in the diagram in the project.
+At present, the project has completed the development and debugging of 3DUNet and 3DVNet(GeoVNet) model, and the model performance is shown in the diagram in the project.
 About 1000 intestinal CT data are used in the project. 
 
 Computational conformal geometry algorithm is used to annotate the data, and then supervised model training is used to solve the problem of image annotation difficulty in medical image processing, and its effect is proved to be better than the traditional geometric segmentation method.
@@ -32,7 +31,7 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment.
 ### U-Net model
 *  3DUNet.py  -- model training
 *  ModelPrediction.py -- generating reconstruction result for visualization
-### V-Net model (./VNet-master)
+### V-Net(GeoVNet) model (./VNet-master)
 *  3DVNet.py  -- model training
 *  Vnet_3d.py -- V-Net model
 *  ModelPrediction.py -- generating reconstruction result for visualization
@@ -49,7 +48,7 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment.
 ### Results
 ![unet](./unetdice.png)
 
-### 3D V-Net Architecture loss:
+### 3D V-Net(GeoVNet) Architecture loss:
 
 ![vnet](./vnetloss.png)
 
@@ -63,6 +62,6 @@ This project was run in ubuntu18.04, NVIDIA GTX 2080Ti environment.
 * Automatic pre-processing algorithm Medical Images in the NIfTI format with simpleitk, scikit-image.
 * Successfully adapted [VNet](https://arxiv.org/abs/1606.04797 "V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation") (3D CNN Architecture) to Tensorflow/Keras.
 
-# Models that are under development
+# Models that are under development(completed)
 * 3D Shifted WINdow Transformer UNet(Using transformer block as bottleneck)
 * Dual attention Vnet(from junqiangchen) [original idea](https://github.com/junqiangchen/VNetFamily)
