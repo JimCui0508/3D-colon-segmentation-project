@@ -1,8 +1,8 @@
 # 3D Transformer-based UNet-like and VNet-like architecture - Keras
 
-*GMine Cooperation** - *"3D Convolutional Neural Network for colon Segmentation"*
+*NIH-82** - *"3D Convolutional Neural Network for colon Segmentation"*
 
-Gmine's intestinal segmentation project, which may be used for tumor prediction.
+Intestinal segmentation project, which may be used for tumor prediction.
 
 
 At present, the project has completed the development and debugging of 3DUNet and 3DVNet(GeoVNet) model, and the model performance is shown in the diagram in the project.
