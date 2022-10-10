@@ -1,4 +1,4 @@
-# 3DUNet-like and VNet-like architecture - Keras
+# 3D Transformer-based UNet-like and VNet-like architecture - Keras
 
 *GMine Cooperation** - *"3D Convolutional Neural Network for colon Segmentation"*
 
