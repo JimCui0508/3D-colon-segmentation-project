@@ -1,6 +1,6 @@
 # 3D Transformer-based UNet-like and VNet-like architecture - Keras
 
-*NIH-82** - *"3D Convolutional Neural Network for colon Segmentation"*
+*"3D Convolutional Neural Network for colon Segmentation"*
 
 Intestinal segmentation project, which may be used for tumor prediction.
 
